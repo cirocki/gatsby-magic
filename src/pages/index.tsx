@@ -1,13 +1,16 @@
 import * as React from "react"
 import type { HeadFC } from "gatsby"
 import styled from 'styled-components';
+import { ThemeProvider } from 'styled-components'
+
+import GlobalCSS from '../assets/styles/global-styles/global.css.js'
+
 
 
 
 const IndexPage = () => {
-  const Praw = styled.h1`
-  
-  `
+
+
   const Button = styled.button`
   /* Adapt the colors based on primary prop */
   background: ${props => props.primary ? "palevioletred" : "white"};
@@ -20,10 +23,13 @@ const IndexPage = () => {
   border-radius: 3px;
 `;
   return (
+    <ThemeProvider theme={{ fontFamily: 'Helvetica Neue' }}>
+<GlobalCSS />
     <main>
       <h1>Start</h1>
       <Button primary>Kilknij</Button>
     </main>
+    </ThemeProvider>
   )
 }
 
