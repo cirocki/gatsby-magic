@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components'
 
 import GlobalCSS from '../assets/styles/global-styles/global.css.js'
+import Layout from "../components/layout/Layout.tsx";
 
 
 
@@ -24,11 +25,15 @@ const IndexPage = () => {
 `;
   return (
     <ThemeProvider theme={{ fontFamily: 'Helvetica Neue' }}>
+      {/* przeniesc do LAYOUT  */}
 <GlobalCSS />
+<Layout>
+
     <main>
       <h1>Start</h1>
-      <Button primary>Kilknij</Button>
+      <Button primary>Kliknij</Button>
     </main>
+</Layout>
     </ThemeProvider>
   )
 }
