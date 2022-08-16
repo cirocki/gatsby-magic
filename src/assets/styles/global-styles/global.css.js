@@ -6,5 +6,6 @@ export default createGlobalStyle`
     padding: 0;
     color: ${(props) => (props.darkMode ? "white" : "blue")};
     font-family: 'Open Sans', sans-serif;
+    background: cyan;
   }
 `;
