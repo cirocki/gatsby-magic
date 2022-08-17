@@ -7,7 +7,6 @@ function Footer(props) {
     
     text-align: center;
     border: ${props => `1px solid ${props.theme.colors.persianGreen}`};
-    /* background: red; */
   `
   return (
     <StyledFooter>Footer</StyledFooter>
