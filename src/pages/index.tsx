@@ -3,7 +3,9 @@ import { SEO } from "../components/Seo"
 import type { HeadProps } from "gatsby"
 import Layout from "../components/layout/Layout";
 
+
 const IndexPage = () => {
+
 
   return (
     <Layout>

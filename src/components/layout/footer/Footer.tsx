@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
+import DarkModeToggler from '../../features/DarkModeToggler';
 
 function Footer(props) {
   console.log(props);
@@ -9,7 +10,10 @@ function Footer(props) {
     border: ${props => `1px solid ${props.theme.colors.persianGreen}`};
   `
   return (
-    <StyledFooter>Footer</StyledFooter>
+    <StyledFooter>
+      Footer
+      <DarkModeToggler/>
+      </StyledFooter>
   )
 }
 
