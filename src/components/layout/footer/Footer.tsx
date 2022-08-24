@@ -1,20 +1,16 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
-import DarkModeToggler from '../../features/DarkModeToggler';
+import DarkModeToggler from "../../features/DarkModeToggler";
+import Container from "../container/Container";
 
-function Footer(props) {
-  console.log(props);
-  const StyledFooter = styled.footer`
-    
-    text-align: center;
-    border: ${props => `1px solid ${props.theme.colors.persianGreen}`};
-  `
+function Footer() {
   return (
-    <StyledFooter>
-      Footer
-      <DarkModeToggler/>
-      </StyledFooter>
-  )
+    <footer>
+      <Container> 
+      <h1>footer</h1>
+      </Container>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
