@@ -7,15 +7,14 @@ import Theme from "./Theme";
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(false);
 
+ 
   return (
     <>
       <Theme>
         <GlobalCSS darkMode={darkMode} />
         <Header />
         {children}
-        <Header />
         <Footer />
-  
       </Theme>
     </>
   );
