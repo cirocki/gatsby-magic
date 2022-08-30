@@ -4,6 +4,8 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `magic-gatsby`,
     siteUrl: `https://alocasia.mc`,
+    pageAuthor: "cirocki.pl",
+    pageAuthorUrl: "https://cirocki.pl/",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

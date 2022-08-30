@@ -1,14 +1,16 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby";
 
 type ReturnValue = {
   site: {
     siteMetadata: {
-      title: string
-      description: string
-      siteUrl: string
-    }
-  }
-}
+      title: string;
+      description: string;
+      siteUrl: string;
+      pageAuthor: string;
+      pageAuthorUrl: string;
+    };
+  };
+};
 
 export const useSiteMetadata = () => {
   const data = useStaticQuery<ReturnValue>(graphql`
@@ -18,10 +20,12 @@ export const useSiteMetadata = () => {
           title
           description
           siteUrl
+          pageAuthor
+          pageAuthorUrl
         }
       }
     }
-  `)
+  `);
 
-  return data.site.siteMetadata
-}
+  return data.site.siteMetadata;
+};
