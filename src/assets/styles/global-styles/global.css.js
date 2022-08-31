@@ -4,9 +4,9 @@ export default createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    color: ${(props) => (props.darkMode ? "white" : "blue")};
-    font-family: 'Open Sans', sans-serif;
-    background: pink;
+    color: ${props => props.theme.colors.standardTextColor};
+    background: ${props => props.theme.colors.standardBgColor};;
+    font-family: ${props => props.theme.fontFamilies.primary};;
   }
     /* KEEP FOOTER BOTTOM EVEN IF MAIN CONTENT IS SHORT  */
   #gatsby-focus-wrapper {

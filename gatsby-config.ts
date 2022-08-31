@@ -12,14 +12,24 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
+    "gatsby-plugin-preload-fonts",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        icon: "src/images/icon.png",
+        fonts: [
+          `aboreto\:300,400`, // you can also specify font weights and styles
+        ],
+        display: "swap",
       },
     },
+    "gatsby-plugin-image",
+    // "gatsby-plugin-sitemap",
+    // {
+    //   resolve: "gatsby-plugin-manifest",
+    //   options: {
+    //     // icon: "src/images/icon.png",
+    //   },
+    // },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

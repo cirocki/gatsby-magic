@@ -1,0 +1,65 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Marcin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gatsby-plugin-google-fonts
+
+PATH: 
+  C:\Users\Marcin\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Marcin\bin;C:\Program Files\mongosh-1.5.1-win32-x64\bin\mongosh.exe;C:\Users\Marcin\.windows-build-tools\python27;C:\Users\Marcin\AppData\Local\Microsoft\WindowsApps;C:\Users\Marcin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Marcin\AppData\Roaming\Composer\vendor\bin;C:\xampp4\php;C:\Program Files\nodejs;C:\Users\Marcin\AppData\Roaming\npm;C:\Program Files\mongosh-1.5.1-win32-x64\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Program Files\Git\usr\local\bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\NOWE PROJEKTY\DEVELOP\gatsby\magic-gatsby\node_modules\@lmdb\lmdb-win32-x64\node.abi93.node'
+
+npm manifest: 
+  {
+    "name": "magic-gatsby",
+    "version": "1.0.0",
+    "private": true,
+    "description": "magic-gatsby",
+    "author": "cirocki",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean",
+      "typecheck": "tsc --noEmit",
+      "preload-fonts": "gatsby-preload-fonts"
+    },
+    "dependencies": {
+      "babel-plugin-styled-components": "^2.0.7",
+      "gatsby": "^4.20.0",
+      "gatsby-plugin-image": "^2.20.0",
+      "gatsby-plugin-manifest": "^4.20.0",
+      "gatsby-plugin-preload-fonts": "^3.22.0",
+      "gatsby-plugin-sharp": "^4.20.0",
+      "gatsby-plugin-sitemap": "^5.20.0",
+      "gatsby-plugin-styled-components": "^5.20.0",
+      "gatsby-source-filesystem": "^4.20.0",
+      "gatsby-transformer-sharp": "^4.20.0",
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0",
+      "styled-components": "^5.3.5"
+    },
+    "devDependencies": {
+      "@types/node": "^17.0.45",
+      "@types/react": "^18.0.16",
+      "@types/react-dom": "^18.0.6",
+      "typescript": "^4.7.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
